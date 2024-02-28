@@ -47,6 +47,7 @@ module.exports.editPost = async (req,res)  =>{
     })
     res.status(200).json(updatePost)
 }
+
 module.exports.deletePost = async (req, res) => {
     try {
         const post = await PostModel.findOneAndDelete({ _id: req.params.id });

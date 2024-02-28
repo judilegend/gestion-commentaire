@@ -20,6 +20,7 @@ app.use(
 
 app.use('/user', require('./routes/user.router'));
 app.use('/post', require('./routes/post.router'))
+app.use('/pub',require('./routes/pub.router'))
 // Connection à la base de données
 ConnectDB();
 
